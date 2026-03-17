@@ -16,6 +16,14 @@ app.get("/api/hello", (c) => {
   return c.json(response);
 })
 
+app.get("/api/hello1", (c) => {
+  const response: Hello = {
+    ok: true,
+    message: "Hello Hono!1"
+  } 
+  return c.json(response);
+})
+
 
 interface Hello {
   ok: boolean;
